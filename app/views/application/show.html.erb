@@ -1,0 +1,28 @@
+ <h1><%= @id %></h1>
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Best Gifs</h1>
+      </div>
+    </div>
+  </div>   
+  <div class="stripe">
+    <div class="container">
+      <div class="row"> 
+        <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <img src="<%= @user.url %>" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="caption"><%= @user.caption %></div>
+      </div>
+      <div class="link">
+           <a href="/user/<%= @user.id %>/edit"> edit </a>
+          <a href="/user/<%= @user.id %>/destroy">delete</a>
+      </div>

@@ -1,0 +1,8 @@
+<h2>Edit User</h2>
+
+
+<form action="/update_user/<%= @user.id %>">
+  <input type="text" name="caption" placeholder="caption" value="<%= @user.caption %>">
+  <input type="text" name="url" placeholder="url" value="<%= @user.url %>">
+  <input type="submit">
+</form>
